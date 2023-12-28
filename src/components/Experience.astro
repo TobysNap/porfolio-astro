@@ -1,0 +1,21 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCE = [
+	{
+		date: '01/2023 - Actualidad...',
+		title: 'Full Stack Web Developer - Freelance',
+		description:
+			'Responsable de proyectos end-to-end, orientado al desarrollo Full Stack con distintas tecnologías. He optimizado el rendimiento y diseñado plataformas de administración eficientes. Mi enfoque orientado a resultados y habilidades independientes garantizan la entrega oportuna de soluciones tecnológicas innovadoras y exitosas.',
+	},
+];
+---
+
+<ol class="relative border-gray-200 border-s">
+	{
+		EXPERIENCE.map((experience) => (
+			<li class="mb-10 ms-4">
+				<ExperienceItem {...experience} />
+			</li>
+		))
+	}
+</ol>
