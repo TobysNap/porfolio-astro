@@ -13,15 +13,15 @@ import Layout from '../layouts/Layout.astro';
 	title="Tobias Napal - Desarrollador Web Full Stack"
 	description="Full Stack Developer apasionado por crear soluciones innovadoras. Descubre cómo transformo ideas en productos digitales atractivos y funcionales. ¡Bienvenido a mi portfolio, donde la tecnología se encuentra con la creatividad!"
 >
-	<main class="">
-		<SectionContainer class="flex items-center pb-32 py-44">
-			<div class="">
+	<main class="px-4">
+		<SectionContainer class="flex flex-col items-center gap-10 pt-10 pb-32 md:gap-0 md:pt-32 lg:pt-44 md:flex-row max-w-screen">
+			<div class="order-2 mx-auto text-center md:order-1">
 				<span class="text-sm opacity-70">Hola! soy</span>
 				<h1 class="font-bold leading-none uppercase text-[5rem] text-accent-400">
 					Tobias Napal
 				</h1>
 				<p class="text-xl text-accent/80">Desarrollador Web Full Stack</p>
-				<div class="flex flex-wrap gap-4 mt-8">
+				<div class="flex flex-wrap justify-center gap-4 mt-8">
 					<SocialPill>
 						<GitHub class="size-4 md:size-6" />
 						<span class="text-xs">GitHub</span>
@@ -36,11 +36,11 @@ import Layout from '../layouts/Layout.astro';
 					</SocialPill>
 				</div>
 			</div>
-			<div class="w-1/2 justify-self-end">
+			<div class="order-1 w-1/2 mx-auto md:order-2 md:justify-self-end">
 				<img
 				src="./tobias-napal.webp"
 				alt="Tobias Napal Picture"
-				class="object-cover rounded-full shadow-xl ms-auto shadow-accent/30 size-56"
+				class="object-cover rounded-full shadow-xl ms-auto shadow-accent/30 size-44 md:size-56"
 				/>
 			</div>
 		</SectionContainer>
